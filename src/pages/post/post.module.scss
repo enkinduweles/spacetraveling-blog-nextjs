@@ -1,1 +1,68 @@
-// TODO
+.banner {
+  margin-bottom: 5.3rem;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.postHeader {
+  margin-bottom: 4.267rem;
+
+  h2 {
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: var(--gray-100);
+    margin-bottom: 1.6rem;
+  }
+}
+
+.publicationInfo {
+  display: flex;
+
+  div {
+    display: flex;
+    align-items: center;
+
+    & + div {
+      margin-left: 1.6rem;
+    }
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  time,
+  p {
+    font-size: 0.933rem;
+    color: var(--gray-300);
+    margin-left: 0.533rem;
+  }
+}
+
+.postContent {
+  h3 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--gray-100);
+    margin-bottom: 4.267rem;
+
+    div + & {
+      margin-top: 1.6rem;
+    }
+  }
+
+  div {
+    strong,
+    a {
+      color: var(--highlight);
+      font-weight: bold;
+    }
+
+    & > * {
+      margin-top: 1.6rem;
+    }
+  }
+}

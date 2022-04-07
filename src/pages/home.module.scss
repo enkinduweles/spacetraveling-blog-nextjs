@@ -1,1 +1,74 @@
-// TODO
+.mainContent {
+  button {
+    color: var(--highlight);
+    font-weight: 600;
+    font-size: 1.2rem;
+    border: 0;
+    background: transparent;
+    margin-top: 3.2rem;
+    transition: filter 0.2s;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
+  }
+}
+
+.postHeading {
+  max-width: 700px;
+
+  a {
+    display: block;
+
+    h2 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 0.533rem;
+      color: var(--gray-100);
+      transition: color 0.2s;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      color: var(--gray-200);
+      margin-bottom: 1.4rem;
+      transition: color 0.2s;
+    }
+
+    &:hover {
+      h2,
+      h3 {
+        color: var(--highlight);
+      }
+    }
+
+    & + a {
+      margin-top: 3.2rem;
+    }
+  }
+}
+
+.publicationInfo {
+  display: flex;
+
+  div {
+    display: flex;
+    align-items: center;
+
+    & + div {
+      margin-left: 1.6rem;
+    }
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  time,
+  p {
+    font-size: 0.933rem;
+    color: var(--gray-300);
+    margin-left: 0.533rem;
+  }
+}
